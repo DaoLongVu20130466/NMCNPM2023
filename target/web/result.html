@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+  <!-- Mobile Specific Meta -->
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="img/fav.png">
+  <!-- Author Meta -->
+  <meta name="author" content="colorlib">
+  <!-- Meta Description -->
+  <meta name="description" content="">
+  <!-- Meta Keyword -->
+  <meta name="keywords" content="">
+  <!-- meta character set -->
+  <meta charset="UTF-8">
+  <!-- Site Title -->
+  <title>Travel</title>
+
+  <link
+          href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
+          rel="stylesheet">
+  <!--
+              CSS
+              ============================================= -->
+  <link rel="stylesheet" href="css/linearicons.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/nice-select.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<style>
+  .row {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+  }
+  .panel-warning>.panel-heading {
+    background-color: rgba(34, 34, 34, 1) !important;
+    color: #fff!important;
+    border-color: 1px solid #ddd!important;
+    padding: 10px 15px;
+    border-radius: 0.3rem 0.3rem 0 0;
+  }
+  .pageWrapper_136o .routeContainer_18I0.isWeb_3ZkG .mainColumn_2ZBp {
+    width: 50%;
+    position: relative;
+  }
+  .pageWrapper_136o .routeContainer_18I0 {
+    color: #4a4a4a;
+    padding: 1rem;
+  }
+  .pageWrapper_136o .routeContainer_18I0.isWeb_3ZkG .mainContent_NrVV {
+    width: 100%;
+    position: relative;
+  }
+  .panel {
+    margin-bottom: 1.2rem;
+    background-color: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2);
+  }
+  .panel_3xdy {
+    border-radius: 3px;
+    /* box-shadow: 0 2px 4px 0 rgba(0,0,0,.2); */
+  }
+  .panel-content {
+    padding: 1.2rem;
+  }
+  .headerWrapper_1-at {
+    background: linear-gradient(90deg,#ee2624,#ee6c0e);
+    color: #fff;
+    height: 49px;
+    display: flex;
+    margin: -1.2rem -1.2rem 1.2rem;
+    padding: 10px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+  }
+  .headerWrapper_1-at .btnBack_1Auj {
+    padding: 0;
+    width: 40px;
+  }
+  button {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+  }
+  [type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+  }
+  .headerWrapper_1-at .btnBack_1Auj .iconback_3Roy {
+    width: 20px;
+    fill: #fff;
+  }
+  .pageWrapper_136o img {
+    max-width: 100%;
+  }
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+  .headerWrapper_1-at .title_1iJp {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: .5rem;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .headerWrapper_1-at #utilitiesHeaderRightButton {
+    display: flex;
+    align-items: center;
+  }
+  .stickyWrap_28LV {
+    position: relative;
+  }
+  .stickyContainer_39sY {
+    z-index: 10;
+    position: static;
+  }
+  .webClass_3Mpd {
+    margin: -1.2rem -1.2rem 1.2rem;
+  }
+  .webClass_3Mpd .header_31U8 {
+    height: 48px;
+  }
+  .fixedBlock_2MXV .header_31U8 {
+    background: #4a90e2;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    color: #fff;
+  }
+  .searchTicketResult_xvCD .trainInfoTitle_DJnQ {
+    display: flex;
+    align-items: center;
+  }
+  .searchTicketResult_xvCD h5 {
+    font-size: 14px;
+  }
+  .searchTicketResult_xvCD h5 {
+    font-size: 14px;
+  }
+  .isBoxShadow_tj3I {
+    padding: 1.5rem 1.2rem;
+    box-shadow: 0 1px 5px 0 #dcd5d5;
+  }
+  .ticketItem_puWe {
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .trainCodeWrapper_1DIK {
+    position: relative;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2MCIgaGVpZ2h0PSI1OCI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSIjRkZFOEU5IiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik00Ni41MTYgMzguNzV2LS4xMDNMNDQuODA1IDIwLjUzYTguNzI2IDguNzI2IDAgMDAtMi43ODctNS43MSA4LjcyNSA4LjcyNSAwIDAwLTUuOTMzLTIuMzE5SDI0LjAwM2E4LjcyNyA4LjcyNyAwIDAwLTUuOTMzIDIuMzE5IDguNzI4IDguNzI4IDAgMDAtMi43ODggNS43MWwtMS43MSAxOC4xMTh2LjEwM2E2LjU3IDYuNTcgMCAwMDYuMjI1IDYuNTU0TDguMzI4IDU4aDUuODlsMy43NTUtNC4xNTdoMjRMNDUuNzI2IDU4aDUuODlMNDAuMTUyIDQ1LjMwN2MzLjUyNy0uMTA2IDYuMzY0LTMuMDA1IDYuMzY0LTYuNTU3ek0xOS42NDIgMTkuNzgzYy4xODItMS42MyAyLjA5Ny0yLjkwOCA0LjM2LTIuOTA4aDEuMTY1djIuNDUxaDkuNzUzdi0yLjQ1MWgxLjE2NWMyLjI2MyAwIDQuMTc5IDEuMjc4IDQuMzYgMi45MDhsLjY0MyA0LjkySDE5bC42NC00Ljg5OC4wMDItLjAyMnptLTEuNjkzIDE5LjA1MmwuNjM4LTYuNzU3SDQxLjVsLjYzOCA2Ljc1N2EyLjE5IDIuMTkgMCAwMS0yLjE4NiAyLjEwMkgyMC4xMzRhMi4xOSAyLjE5IDAgMDEtMi4xODUtMi4xMDJ6bTMuOTc2IDEwLjYzM2wzLjc1NC00LjE1Nmg4LjU4N2wzLjc1NCA0LjE1NkgyMS45MjV6TTYwIDMxLjk4MmMwIDUuMTkzLTEuMzUgMTAuMzExLTMuOTA1IDE0LjgwMUEzMC4wOTIgMzAuMDkyIDAgMDE1MS4zODYgNTNsLTMuMTM1LTMuNDc2YzQuNDk3LTQuNjUxIDcuMDYyLTEwLjg3NSA3LjA2Mi0xNy41NDJDNTUuMzEzIDE4LjAzMyA0My45NTYgNi42ODUgMzAgNi42ODVjLTEzLjk1NyAwLTI1LjMxMyAxMS4zNDgtMjUuMzEzIDI1LjI5NyAwIDYuNjUyIDIuNTUzIDEyLjg2MyA3LjAzMSAxNy41MTFMOC41ODMgNTIuOTdhMzAuMTAzIDMwLjEwMyAwIDAxLTQuNjc4LTYuMTg2QTI5Ljk3NSAyOS45NzUgMCAwMTAgMzEuOTgyYzAtOC4wMDggMy4xMi0xNS41MzggOC43ODctMjEuMkMxNC40NTMgNS4xMTkgMjEuOTg3IDIgMzAgMmM4LjAxMyAwIDE1LjU0NyAzLjExOSAyMS4yMTMgOC43ODJDNTYuODggMTYuNDQ0IDYwIDIzLjk3NCA2MCAzMS45ODJ6Ii8+PHJlY3Qgd2lkdGg9IjM4IiBoZWlnaHQ9IjM0IiB4PSIxMSIgeT0iMTIiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgcng9IjgiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMTYgMGgyOHYxM0gxNnoiLz48cGF0aCBmaWxsPSIjRkZDRkQxIiBzdHJva2U9IiNGRkYiIHN0cm9rZS13aWR0aD0iMi4yIiBkPSJNMjAuNDMgNDkuODQzbDYuMjczLTYuNzQyLjYwNy4xMjVjLjM2OC4wNzcuNzI1LjEzMyAxLjA4MS4xN2wuOTg3LjEwM3YxMC4xNjdsLTguOTQ3LTMuODIzem0yLjgyLTkuNTM2Yy42MTguNzYyIDEuNDY0IDEuNDA3IDIuNDkgMS44ODNsMS4zNzcuNjM3LTYuMjQ1IDYuNzEyLTExLjk2NC00LjI4NiAxMy44My01LjU3Ny41MTIuNjMxem04LjAyNyAzLjA5Yy4zNTctLjAzOC43MTQtLjA5NCAxLjA4Mi0uMTdsLjYwNy0uMTI2IDYuMjcyIDYuNzQyLTguOTQ3IDMuODIzVjQzLjQ5OGwuOTg2LS4xMDJ6bTE2Ljk0LjY5NmwyLjg3MyAxLjE2LTExLjk2MiA0LjI4Ni02LjI0NC02LjcxMiAxLjM3NS0uNjM3YzEuMDI2LS40NzUgMS44NzMtMS4xMjEgMi40OTItMS44ODNsLjUxMi0uNjMxIDEwLjk1NCA0LjQxN3oiLz48cGF0aCBmaWxsPSIjRkZDRkQxIiBkPSJNMjUuNDI3IDExLjk1N2ExOS40MjQgMTkuNDI0IDAgMDE5LjI0LjA0M1Y2LjQwNUgzN1Y0SDIzdjIuNDA1aDIuNDI3djUuNTUyek0zMCAxNy40NzJjMy43MDkgMCA2Ljg5MyAxLjg2IDguMzk3IDQuNTI4SDQydi01LjY2NmwtLjU2OS0uMzM3QzM0LjY5NyAxMiAyNS4zMDMgMTIgMTguNTcgMTUuOTk3bC0uNTY5LjMzN1YyMmgzLjYwM2MxLjUwNC0yLjY2OCA0LjY4OC00LjUyOCA4LjM5Ny00LjUyOHoiLz48L2c+PC9zdmc+);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .trainCode_2MzV {
+    font-size: 16px;
+    font-weight: 600;
+    width: 60px;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 4px;
+    padding-top: 6px;
+  }
+  .trainInfo_1sxO {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .trainInfo_1sxO .departInfo_3zqF {
+    -ms-grid-column-align: self-start;
+    justify-self: self-start;
+  }
+  .trainInfo_1sxO .departInfo_3zqF .trainportName_Pg6y {
+    font-size: 14px;
+    color: #4a4a4a;
+  }
+  .trainInfo_1sxO .departInfo_3zqF p {
+    margin-bottom: 0;
+  }
+  .trainInfo_1sxO .departInfo_3zqF .ticketTime_1okW {
+    font-weight: 600;
+    font-size: 18px;
+    color: #4a4a4a;
+  }
+  .trainInfo_1sxO .departInfo_3zqF p {
+    margin-bottom: 0;
+  }
+  .trainInfo_1sxO .departInfo_3zqF .ticketDate_1yH2 {
+    font-size: 12px;
+    color: #9b9b9b;
+  }
+  .trainInfo_1sxO .departInfo_3zqF p {
+    margin-bottom: 0;
+  }
+  .trainInfo_1sxO .durationInfo_1ta2 {
+    margin: 0 2.4rem;
+  }
+  .trainInfo_1sxO .durationInfo_1ta2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 6px;
+  }
+  .trainInfo_1sxO .durationInfo_1ta2 span {
+    color: #9b9b9b;
+    font-size: 11px;
+  }
+  .pageWrapper_136o img {
+    max-width: 100%;
+  }
+  .trainInfo_1sxO .arrivalInfo_EvKK {
+    justify-self: self-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .trainInfo_1sxO .arrivalInfo_EvKK .trainportName_Pg6y {
+    font-size: 14px;
+    color: #4a4a4a;
+  }
+  .trainInfo_1sxO .arrivalInfo_EvKK p {
+    margin-bottom: 0;
+  }
+  .trainInfo_1sxO .arrivalInfo_EvKK .ticketTime_1okW {
+    font-weight: 600;
+    font-size: 18px;
+    color: #4a4a4a;
+  }
+  .trainInfo_1sxO .arrivalInfo_EvKK p {
+    margin-bottom: 0;
+  }
+  .trainInfo_1sxO .arrivalInfo_EvKK .ticketDate_1yH2 {
+    font-size: 12px;
+    color: #9b9b9b;
+  }
+  .trainInfo_1sxO .arrivalInfo_EvKK p {
+    margin-bottom: 0;
+  }
+  .actionClass_-NJc {
+    display: flex;
+    flex-direction: column;
+  }
+  .actionClass_-NJc span {
+    font-size: 11px;
+    padding-bottom: 5px;
+  }
+  .roundButton_2MH7.red_3YQB {
+    background-color: #e5101d;
+    color: #fff;
+  }
+  .roundButton_2MH7.sizeXS_1Vya {
+    border-radius: 16px;
+    font-size: 12px;
+    height: 32px;
+    line-height: 26px;
+    padding: 0 12px;
+  }
+  button {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+  }
+  .fixedBlock_2MXV .content_1jNf {
+    padding: 1rem 1rem 0;
+    background: #fff;
+  }
+  .webClass_Dk9N {
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .priorAndNextDate_6oLG {
+    display: flex;
+    align-items: center;
+    margin: -1rem -1rem 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e1e1e1;
+  }
+  .priorAndNextDate_6oLG .headerLabel_29fy.left_31aM {
+    text-align: left;
+  }
+  .webClass_Dk9N .headerLabel_29fy {
+    width: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #9fa5a9;
+  }
+  .priorAndNextDate_6oLG .headerLabel_29fy {
+    font-size: 14px;
+    color: #9b9b9b;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .priorAndNextDate_6oLG .headerLabel_29fy.active_AkNu {
+    color: #4a4a4a;
+    font-weight: 600;
+    text-align: center;
+  }
+  .webClass_Dk9N .headerLabel_29fy {
+    width: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #9fa5a9;
+  }
+  .priorAndNextDate_6oLG .headerLabel_29fy.left_31aM svg {
+    transform: rotate(180deg);
+  }
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  .priorAndNextDate_6oLG .headerLabel_29fy.left_31aM {
+    text-align: left;
+  }
+  .priorAndNextDate_6oLG .headerLabel_29fy {
+    font-size: 14px;
+    color: #9b9b9b;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .priorAndNextDate_6oLG .headerLabel_29fy.right_2b04 {
+    text-align: right;
+  }
+  .webClass_1F7D .trainInfoHeader_3XxF {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2.4rem;
+  }
+  .searchTicketResult_xvCD .trainInfoHeader_3XxF {
+    padding-bottom: 1rem;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .webClass_1F7D .trainInfoHeader_3XxF .headerLabel_3uwP {
+    font-size: 13px;
+  }
+  .searchTicketResult_xvCD .trainInfoHeader_3XxF .headerLabel_3uwP img {
+    margin-left: 3px;
+  }
+  .pageWrapper_136o img {
+    max-width: 100%;
+  }
+  .webClass_1F7D .trainInfoHeader_3XxF .trainTitleInfo__j8t {
+    width: 299px;
+    min-width: 299px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .searchTicketResult_xvCD .trainInfoHeader_3XxF .headerLabel_3uwP.activeSort_2urc {
+    color: #4a4a4a;
+  }
+  .webClass_1F7D .trainInfoHeader_3XxF .headerLabel_3uwP {
+    font-size: 13px;
+  }
+  .searchTicketResult_xvCD .trainInfoHeader_3XxF .headerLabel_3uwP {
+    color: #9b9b9b;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .searchTicketResult_xvCD .trainInfoHeader_3XxF .headerLabel_3uwP .rotate0_147A {
+    transition: transform .2s linear;
+    transform: rotate(0);
+  }
+  .searchTicketResult_xvCD .trainInfoHeader_3XxF .headerLabel_3uwP img {
+    margin-left: 3px;
+  }
+  .pageWrapper_136o img {
+    max-width: 100%;
+  }
+  .webClass_1F7D .trainInfoHeader_3XxF .hideDiv_2A0r {
+    width: 70px;
+  }
+</style>
+
+<header id="header">
+  <div class="header-top">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 col-sm-6 col-6 header-top-left">
+          <ul>
+            <li><a href="#">Visit Us</a></li>
+            <li><a href="#">Buy Tickets</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-6 header-top-right">
+          <div class="header-social">
+            <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+                  class="fa fa-twitter"></i></a> <a href="#"><i
+                  class="fa fa-dribbble"></i></a> <a href="#"><i
+                  class="fa fa-behance"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container main-menu">
+    <div class="row align-items-center justify-content-between d-flex">
+      <div id="logo">
+        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+      </div>
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="index.html">Tìm vé</a></li>
+          <li><a href="infor.html">Thông tin đặt chỗ</a></li>
+          <li><a href="repay.html">Trả vé</a></li>
+          <li><a href="check.html">Kiếm tra vé</a></li>
+          <li><a href="promotion.html">Khuyến mại</a></li>
+          <li class=""><a href="regulations.html">Các quy định</a></li>
+          <li class=""><a href="guide.html">Hướng dẫn</a>
+          <li><a href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </div>
+</header>
+<!-- #header -->
+
+<!-- start banner Area -->
+<section class="about-banner relative">
+  <div class="overlay overlay-bg"></div>
+  <div class="container">
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="about-content col-lg-12">
+        <h1 class="text-white">Chọn chuyến tàu đi</h1>
+        <p class="text-white link-nav">
+          <a href="index.html">Tìm vé </a> <span class="lnr lnr-arrow-right"></span>
+          <a href="ticketList.html"> Danh sách vé <tàu></tàu></a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End banner Area -->
+
+<!-- Start hot-deal Area -->
+<section class="hot-deal-area section-gap">
+  <div class="container">
+
+    <div class="container et-main-content" ng-show="!bannerTet">
+      <!-- start list -->
+      <div class="mainColumn_2ZBp">
+        <div class="panel panel_3xdy mainContent_NrVV">
+          <div class="panel-content">
+            <link rel="preload" href="//pwa-web.scdn.vn/static/media/countryside.fae4b505.svg" as="image">
+            <section class="searchTicketResult_xvCD webClass_1F7D" style="min-height: 550px;">
+              <div class="stickyWrap_28LV" id="stickyWrap">
+                <div id="utilitiesSticky" class="stickyContainer_39sY"><div class="fixedBlock_2MXV webClass_3Mpd">
+                  <div class="header_31U8"><h5 class="trainInfoTitle_DJnQ">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDI4IDI4Ij4KICAgIDxnIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTMgMTguMTA1YS42LjYgMCAwIDEgLjYtLjZoMjMuOGEuNi42IDAgMCAxIC42LjZ2My4zN2EuNi42IDAgMCAxLS42LjZoLS43N2MtLjEyNS0xLjYxMS0xLjQ5Ni0yLjg4NS0zLjE2NS0yLjg4NS0xLjY2OCAwLTMuMDQgMS4yNzQtMy4xNjUgMi44ODVoLTEuNjM1Yy0uMTI1LTEuNjExLTEuNDk2LTIuODg1LTMuMTY1LTIuODg1cy0zLjA0IDEuMjc0LTMuMTY1IDIuODg1SDEwLjdjLS4xMjYtMS42MTEtMS40OTctMi44ODUtMy4xNjUtMi44ODUtMS42NjkgMC0zLjA0IDEuMjc0LTMuMTY2IDIuODg1SDMuNmEuNi42IDAgMCAxLS42LS42di0zLjM3em02LjU5Ni04Ljc4Yy40MDYgMCAuNzM2LjMyNi43MzYuNzI1djEuNDQ0SDguODYxVjEwLjA1YzAtLjQuMzMtLjcyNC43MzUtLjcyNHptMTQuMDA2IDEuNTY5YS42LjYgMCAwIDAgLjYuNmgxLjczMmEuNi42IDAgMCAxIC42LjZ2My4zN2EuNi42IDAgMCAxLS42LjZoLTEuNzMyYS42LjYgMCAwIDEtLjYtLjZ2LS40ODVhLjYuNiAwIDAgMC0uNi0uNmgtLjI2NWEuNi42IDAgMCAwLS42LjZ2LjQ4NGEuNi42IDAgMCAxLS42LjZoLS4yNjdhLjYuNiAwIDAgMS0uNi0uNnYtLjQ4NGEuNi42IDAgMCAwLS42LS42aC0uMjY1YS42LjYgMCAwIDAtLjYuNnYuNDg0YS42LjYgMCAwIDEtLjYuNmgtLjI2N2EuNi42IDAgMCAxLS42LS42di0uNDg0YS42LjYgMCAwIDAtLjYtLjZoLS4yNjVhLjYuNiAwIDAgMC0uNi42di40ODRhLjYuNiAwIDAgMS0uNi42SDUuMDY2YS42LjYgMCAwIDEtLjYtLjZWNS42YS42LjYgMCAwIDEgLjYtLjZoOS4wNjFhLjYuNiAwIDAgMSAuNi42djUuMjk0YS42LjYgMCAwIDAgLjYuNkgxOC42YS42LjYgMCAwIDAgLjYtLjZWOS42ODNhLjYuNiAwIDAgMC0uNi0uNmgtLjI2NmEuNi42IDAgMCAxLS42LS42VjguMjRhLjYuNiAwIDAgMSAuNi0uNmg2LjEzNWEuNi42IDAgMCAxIC42LjZ2LjI0MmEuNi42IDAgMCAxLS42LjZoLS4yNjdhLjYuNiAwIDAgMC0uNi42djEuMjF6bS0xMS44MDUgMi4wNDJWMTAuMDVjMC0xLjE5NC0uOTg3LTIuMTY2LTIuMi0yLjE2Ni0xLjIxNCAwLTIuMjAxLjk3Mi0yLjIwMSAyLjE2NnYyLjg4Nmg0LjQwMXptMTEuNjY4IDcuNjk2Yy45NDQgMCAxLjcxMS43NTYgMS43MTEgMS42ODQgMCAuOTI5LS43NjcgMS42ODQtMS43MSAxLjY4NC0uOTQ0IDAtMS43MTEtLjc1NS0xLjcxMS0xLjY4NCAwLS45MjguNzY3LTEuNjg0IDEuNzEtMS42ODR6bS03Ljk2NSAwYy45NDMgMCAxLjcxLjc1NiAxLjcxIDEuNjg0IDAgLjkyOS0uNzY3IDEuNjg0LTEuNzEgMS42ODRzLTEuNzEtLjc1NS0xLjcxLTEuNjg0YzAtLjkyOC43NjctMS42ODQgMS43MS0xLjY4NHptLTcuOTY1IDBjLjk0MyAwIDEuNzEuNzU2IDEuNzEgMS42ODQgMCAuOTI5LS43NjcgMS42ODQtMS43MSAxLjY4NC0uOTQ0IDAtMS43MTEtLjc1NS0xLjcxMS0xLjY4NCAwLS45MjguNzY3LTEuNjg0IDEuNzEtMS42ODR6Ii8+CiAgICAgICAgPHBhdGggZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTcuMjIgMi42OTZjLjA3OS4wMTcuMTU3LjAzMy4yMDQgMGwtLjA0My4yMDVjLS4xNTYuNzMzLjI5OCAxLjQ2OS45OTkgMS42MThhMS4zNiAxLjM2IDAgMCAwIDEuMDItLjIxbC0uMDM0LjE2NGMtLjE2NS43NzQuMjkgMS41MSAxLjAzIDEuNjY3LjQ2Ni4xLjk1NS0uMDk1IDEuMjY3LS40MTIuMTMuMTU1LjMwNy4yNzguNTAxLjMyLjUwNy4xMDcuOTgyLS4yMTggMS4wOTUtLjc0OC4wMjYtLjEyMi4wMTMtLjI1MyAwLS4zODMuMzcyLS4yMi42NTQtLjU4NS43NDktMS4wMzQuMTgyLS44NTYtLjMzMy0xLjY5LTEuMTUtMS44NjNhMS4zOCAxLjM4IDAgMCAwLS45NjUuMTM2Yy0uMTQ3LS40NTctLjUxNS0uODM0LS45ODItLjkzMy0uMzUtLjA3NC0uNjg4LS4wMTgtLjkzNC4xODUtLjE2NC0uMzc2LS4zNzItLjU0OC0uNjQ1LS42MDZhLjczNi43MzYgMCAwIDAtLjgyMi40MjIgMS4wNjUgMS4wNjUgMCAwIDAtLjgxMy0uNzdjLS41ODQtLjEyMy0xLjE5NC4yNTgtMS4zMzIuOTEtLjA4My41NzkuMjcyIDEuMjA4Ljg1NiAxLjMzMnoiLz4KICAgIDwvZz4KPC9zdmc+Cg==">Chiều đi</h5><h5>Hà Nội - Sài Gòn</h5></div><div class="content_1jNf">
+                  <div class="priorAndNextDate_6oLG webClass_Dk9N"><div class="headerLabel_29fy left_31aM ">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" fill="#9b9b9b">
+                      <g data-name="Layer 2">
+                        <g data-name="Layer 1">
+                          <path d="M18.44,30.89,25.31,24l-6.87-6.89L20.56,15l9,9-9,9Z"></path>
+                          <path d="M0,0H48V48H0Z" fill="none"></path>
+                        </g></g></svg></div>
+                    <div class="headerLabel_29fy active_AkNu">Chủ nhật, 21/05/2023</div>
+                    <div class="headerLabel_29fy right_2b04 "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="40" height="40" fill="#9b9b9b"><g data-name="Layer 2"><g data-name="Layer 1">
+                      <path d="M18.44,30.89,25.31,24l-6.87-6.89L20.56,15l9,9-9,9Z"></path>
+                      <path d="M0,0H48V48H0Z" fill="none"></path></g></g></svg></div></div>
+                  <div class="trainInfoHeader_3XxF">
+                    <div class="headerLabel_3uwP left_2Am-">Tất cả tàu
+                      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgMTMgOCI+CiAgICA8cGF0aCBmaWxsPSIjOUI5QjlCIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMi41IDEuODMyTDExLjA5LjUgNi41MDEgNC44MjcgMS45MTEuNS41IDEuODMyIDYuNTAxIDcuNXoiLz4KPC9zdmc+Cg==" alt=""></div>
+                    <div class="trainTitleInfo__j8t"><div class="headerLabel_3uwP activeSort_2urc left_2Am-">Giờ đi
+                      <img class="rotate0_147A" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNSIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDUgMTAiPgogICAgPGRlZnM+CiAgICAgICAgPHBhdGggaWQ9ImEiIGQ9Ik03LjUwNiAxLjg3NUgwdjEuMjVoNy41MDZWNUwxMCAyLjUgNy41MDYgMHoiLz4KICAgIDwvZGVmcz4KICAgIDx1c2UgZmlsbD0iIzRBNEE0QSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InJvdGF0ZSgtOTAgNSA1KSIgeGxpbms6aHJlZj0iI2EiLz4KPC9zdmc+Cg==" alt="">
+                    </div>
+                      <div class="headerLabel_3uwP staticLabel_3P8n">Thời gian chạy<img class="hidden_2iZQ" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNSIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDUgMTAiPgogICAgPGRlZnM+CiAgICAgICAgPHBhdGggaWQ9ImEiIGQ9Ik03LjUwNiAxLjg3NUgwdjEuMjVoNy41MDZWNUwxMCAyLjUgNy41MDYgMHoiLz4KICAgIDwvZGVmcz4KICAgIDx1c2UgZmlsbD0iIzRBNEE0QSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InJvdGF0ZSgtOTAgNSA1KSIgeGxpbms6aHJlZj0iI2EiLz4KPC9zdmc+Cg==" alt="">
+                      </div>
+                      <div class="headerLabel_3uwP">Giờ đến<img class="hidden_2iZQ" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNSIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDUgMTAiPgogICAgPGRlZnM+CiAgICAgICAgPHBhdGggaWQ9ImEiIGQ9Ik03LjUwNiAxLjg3NUgwdjEuMjVoNy41MDZWNUwxMCAyLjUgNy41MDYgMHoiLz4KICAgIDwvZGVmcz4KICAgIDx1c2UgZmlsbD0iIzRBNEE0QSIgZmlsbC1ydWxlPSJldmVub2RkIiB0cmFuc2Zvcm09InJvdGF0ZSgtOTAgNSA1KSIgeGxpbms6aHJlZj0iI2EiLz4KPC9zdmc+Cg==" alt="">
+                      </div></div>
+                    <div class="hideDiv_2A0r"></div></div></div></div></div></div>
+              <div class="ticketItem_puWe isBoxShadow_tj3I" id="trainInfo-414727">
+                <div class="trainCodeWrapper_1DIK">
+                  <div class="trainCode_2MzV">SE7</div>
+                </div>
+                <div class="trainInfo_1sxO">
+                  <div class="departInfo_3zqF"><p class="trainportName_Pg6y">Hà Nội</p><p class="ticketTime_1okW">06:10</p><p class="ticketDate_1yH2">21/05/2023</p>
+                  </div>
+                  <div class="durationInfo_1ta2"><span>1n 11g48p</span><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTkiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxMTkgMTYiPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBzdHJva2U9IiM5Nzk3OTciIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIGQ9Ik0xNy41IDEwLjVIMTExIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTE0LjUiIGN5PSIxMC41IiByPSIzLjUiIGZpbGw9IiNEOEQ4RDgiIHN0cm9rZT0iIzk3OTc5NyIvPgogICAgICAgIDxnIGZpbGw9IiM0QTRBNEEiPgogICAgICAgICAgICA8cGF0aCBkPSJNMCAxMi4wNjZjMC0uMjE5LjE3Ny0uMzk2LjM5Ni0uMzk2aDE2LjIwOGMuMjE5IDAgLjM5Ni4xNzcuMzk2LjM5NnYyLjI1NWEuMzk2LjM5NiAwIDAgMS0uMzk2LjM5NmgtLjUzNWMtLjA4Ni0xLjA3NS0xLjAxOC0xLjkyNC0yLjE1My0xLjkyNC0xLjEzNCAwLTIuMDY2Ljg1LTIuMTUyIDEuOTI0aC0xLjExMmMtLjA4NS0xLjA3NS0xLjAxNy0xLjkyNC0yLjE1Mi0xLjkyNC0xLjEzNSAwLTIuMDY3Ljg1LTIuMTUyIDEuOTI0SDUuMjM2Yy0uMDg1LTEuMDc1LTEuMDE4LTEuOTI0LTIuMTUyLTEuOTI0LTEuMTM1IDAtMi4wNjcuODUtMi4xNTMgMS45MjRILjM5NkEuMzk2LjM5NiAwIDAgMSAwIDE0LjMydi0yLjI1NXptNC40ODYtNS44NDljLjI3NiAwIC41LjIxNy41LjQ4M3YuOTYyaC0xVjYuN2MwLS4yNjYuMjI0LS40ODMuNS0uNDgzem05LjUyMyAxLjA1YzAgLjIxOC4xNzguMzk1LjM5Ni4zOTVoMS4yMDJjLjIxOSAwIC4zOTYuMTc4LjM5Ni4zOTZ2Mi4yNTVhLjM5Ni4zOTYgMCAwIDEtLjM5Ni4zOTZoLTEuMjAyYS4zOTYuMzk2IDAgMCAxLS4zOTYtLjM5NnYtLjMzYS4zOTYuMzk2IDAgMCAwLS4zOTYtLjM5N2gtLjIwNGEuMzk2LjM5NiAwIDAgMC0uMzk2LjM5NnYuMzMxYS4zOTYuMzk2IDAgMCAxLS4zOTYuMzk2aC0uMjA1YS4zOTYuMzk2IDAgMCAxLS4zOTYtLjM5NnYtLjMzYS4zOTYuMzk2IDAgMCAwLS4zOTYtLjM5N2gtLjIwNWEuMzk2LjM5NiAwIDAgMC0uMzk2LjM5NnYuMzMxYS4zOTYuMzk2IDAgMCAxLS4zOTYuMzk2aC0uMjA1YS4zOTYuMzk2IDAgMCAxLS4zOTYtLjM5NnYtLjMzYS4zOTYuMzk2IDAgMCAwLS4zOTYtLjM5N2gtLjIwNGEuMzk2LjM5NiAwIDAgMC0uMzk2LjM5NnYuMzMxYS4zOTYuMzk2IDAgMCAxLS4zOTYuMzk2SDEuMzkzYS4zOTYuMzk2IDAgMCAxLS4zOTYtLjM5NlYzLjcyOWMwLS4yMTguMTc3LS4zOTYuMzk2LS4zOTZoNi4xODVjLjIxOSAwIC4zOTYuMTc4LjM5Ni4zOTZ2My41MzdjMCAuMjIuMTc4LjM5Ni4zOTYuMzk2aDIuMjVhLjM5Ni4zOTYgMCAwIDAgLjM5Ni0uMzk2di0uODE1YS4zOTYuMzk2IDAgMCAwLS4zOTYtLjM5NmgtLjIwNWEuMzk2LjM5NiAwIDAgMS0uMzk2LS4zOTZWNS40OWMwLS4yMTkuMTc3LS4zOTYuMzk2LS4zOTZoNC4xOTZjLjIxOCAwIC4zOTYuMTc3LjM5Ni4zOTZ2LjE3YS4zOTYuMzk2IDAgMCAxLS4zOTYuMzk1aC0uMjA2YS4zOTYuMzk2IDAgMCAwLS4zOTYuMzk2di44MTV6TTUuOTgyIDguNjIzVjYuN2MwLS43OTYtLjY3MS0xLjQ0NC0xLjQ5Ni0xLjQ0NC0uODI2IDAtMS40OTcuNjQ4LTEuNDk3IDEuNDQ0djEuOTI0aDIuOTkzem03LjkzNCA1LjEzYy42NDIgMCAxLjE2NC41MDQgMS4xNjQgMS4xMjMgMCAuNjItLjUyMiAxLjEyMy0xLjE2NCAxLjEyMy0uNjQxIDAtMS4xNjMtLjUwNC0xLjE2My0xLjEyM3MuNTIyLTEuMTIyIDEuMTYzLTEuMTIyem0tNS40MTYgMGMuNjQxIDAgMS4xNjMuNTA0IDEuMTYzIDEuMTIzIDAgLjYyLS41MjIgMS4xMjMtMS4xNjMgMS4xMjNzLTEuMTYzLS41MDQtMS4xNjMtMS4xMjMuNTIyLTEuMTIyIDEuMTYzLTEuMTIyem0tNS40MTYgMGMuNjQxIDAgMS4xNjMuNTA0IDEuMTYzIDEuMTIzIDAgLjYyLS41MjIgMS4xMjMtMS4xNjMgMS4xMjMtLjY0MiAwLTEuMTY0LS41MDQtMS4xNjQtMS4xMjNzLjUyMi0xLjEyMiAxLjE2NC0xLjEyMnoiLz4KICAgICAgICAgICAgPHBhdGggZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTAuMzUgMS43OThjLjA1My4wMS4xMDYuMDIyLjEzOCAwbC0uMDMuMTM2Yy0uMTA1LjQ4OS4yMDQuOTguNjggMS4wNzguMjM4LjA1LjUtLjAwOS42OTQtLjEzOWwtLjAyMy4xMDljLS4xMTIuNTE2LjE5NyAxLjAwNi43IDEuMTExLjMxNy4wNjYuNjUtLjA2My44NjItLjI3NWEuNjMuNjMgMCAwIDAgLjM0LjIxNC42MjcuNjI3IDAgMCAwIC43NDUtLjQ5OGMuMDE4LS4wODIuMDEtLjE2OSAwLS4yNTYuMjUzLS4xNDYuNDQ1LS4zOS41MS0uNjkuMTIzLS41Ny0uMjI3LTEuMTI1LS43ODMtMS4yNDFhLjk1NS45NTUgMCAwIDAtLjY1Ni4wOS45Mi45MiAwIDAgMC0uNjY3LS42MjJjLS4yMzktLjA1LS40NjgtLjAxMi0uNjM2LjEyNC0uMTExLS4yNS0uMjUzLS4zNjYtLjQzOC0uNDA0YS41MDMuNTAzIDAgMCAwLS41NTkuMjguNzE4LjcxOCAwIDAgMC0uNTUzLS41MTIuNzc0Ljc3NCAwIDAgMC0uOTA2LjYwNmMtLjA1Ni4zODYuMTg1LjgwNi41ODIuODg5eiIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="">
+                  </div>
+                  <div class="arrivalInfo_EvKK">
+                    <div><p class="trainportName_Pg6y">Sài Gòn</p><p class="ticketTime_1okW">17:58</p><p class="ticketDate_1yH2">22/05/2023</p>
+                    </div></div></div>
+                <div class="actionClass_-NJc">
+                  <button class="roundButton_2MH7 red_3YQB sizeXS_1Vya" id="" name="">Chọn</button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <!-- End list -->
+
+    </div>
+
+  </div>
+</section>
+<!-- End hot-deal Area -->
+
+
+
+
+
+<!-- start footer Area -->
+<footer class="footer-area section-gap">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-3  col-md-6 col-sm-6">
+        <div class="single-footer-widget">
+          <h6>About Agency</h6>
+          <p>The world has become so fast paced that people don’t want
+            to stand by reading a page of information, they would much rather
+            look at a presentation and understand the message. It has come to
+            a point</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="single-footer-widget">
+          <h6>Navigation Links</h6>
+          <div class="row">
+            <div class="col">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <ul>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3  col-md-6 col-sm-6">
+        <div class="single-footer-widget">
+          <h6>Newsletter</h6>
+          <p>For business professionals caught between high OEM price
+            and mediocre print and graphic output.</p>
+          <div id="mc_embed_signup">
+            <form target="_blank"
+                  action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                  method="get" class="subscription relative">
+              <div class="input-group d-flex flex-row">
+                <input name="EMAIL" placeholder="Email Address"
+                       onfocus="this.placeholder = ''"
+                       onblur="this.placeholder = 'Email Address '" required=""
+                       type="email">
+                <button class="btn bb-btn">
+                  <span class="lnr lnr-location"></span>
+                </button>
+              </div>
+              <div class="mt-10 info"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3  col-md-6 col-sm-6">
+        <div class="single-footer-widget mail-chimp">
+          <h6 class="mb-20">InstaFeed</h6>
+          <ul class="instafeed d-flex flex-wrap">
+            <li><img src="img/i1.jpg" alt=""></li>
+            <li><img src="img/i2.jpg" alt=""></li>
+            <li><img src="img/i3.jpg" alt=""></li>
+            <li><img src="img/i4.jpg" alt=""></li>
+            <li><img src="img/i5.jpg" alt=""></li>
+            <li><img src="img/i6.jpg" alt=""></li>
+            <li><img src="img/i7.jpg" alt=""></li>
+            <li><img src="img/i8.jpg" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div
+            class="row footer-bottom d-flex justify-content-between align-items-center">
+      <p class="col-lg-8 col-sm-12 footer-text m-0">
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        Copyright &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All rights reserved | This template is made with <i
+              class="fa fa-heart-o" aria-hidden="true"></i> by <a
+              href="https://colorlib.com" target="_blank">Colorlib</a>
+        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+      </p>
+      <div class="col-lg-4 col-sm-12 footer-social">
+        <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i
+              class="fa fa-twitter"></i></a> <a href="#"><i
+              class="fa fa-dribbble"></i></a> <a href="#"><i
+              class="fa fa-behance"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End footer Area -->
+
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/easing.min.js"></script>
+<script src="js/hoverIntent.js"></script>
+<script src="js/superfish.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/mail-script.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
