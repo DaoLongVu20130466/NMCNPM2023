@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d5624661-7329-46f9-b283-3c81d3871cc1" name="Changes" comment="trả vé" />
+    <list default="true" id="d5624661-7329-46f9-b283-3c81d3871cc1" name="Changes" comment="trả vé">
+      <change afterPath="$PROJECT_DIR$/.idea/NMCNPM2023.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_5_21_2023_11_33_PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_5_21_2023_11_33_PM_[Changes]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_5_21_2023_11_33_PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Model/Bill.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Model/NumberFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Model/Ticket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Servlet/CompletedServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Servlet/ConfirmServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Servlet/RepayServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/web/completed_repay.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/web/confirm.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_21_2023_11_18_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_5_21_2023_11_18_PM__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/check.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/check.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/guide.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/guide.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/infor.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/infor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/ketquatimkiem.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/ketquatimkiem.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/promotion.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/promotion.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/regulations.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/regulations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/repay.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/repay.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/web/result.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,14 +37,34 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="KimAnh" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Q6qvFuKSi06uxjfXqGUfC0SK0G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/clone_cnpm/NMCNPM2023&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\clone_cnpm\NMCNPM2023\target\classes\Servlet" />
+      <recent name="D:\clone_cnpm\NMCNPM2023\target\classes\Model" />
+      <recent name="D:\clone_cnpm\NMCNPM2023\target\web" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
@@ -34,8 +81,21 @@
       </method>
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5624661-7329-46f9-b283-3c81d3871cc1" name="Changes" comment="" />
+      <created>1684684608392</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684684608392</updated>
+      <workItem from="1684684612179" duration="680000" />
+      <workItem from="1684687028235" duration="280000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -47,5 +107,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="trả vé" />
+    <option name="LAST_COMMIT_MESSAGE" value="trả vé" />
   </component>
 </project>
