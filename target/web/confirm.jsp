@@ -1,4 +1,11 @@
-	<!DOCTYPE html>
+<%@ page import="Model.Ticket" %>
+<%@ page import="Service.Webservice" %>
+<%@ page import="Model.NumberFormat" %>
+<%@ page import="java.text.FieldPosition" %>
+<%@ page import="java.text.ParsePosition" %>
+<%@ page import="java.util.List" %>
+<!DOCTYPE html>
+	<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 	<html lang="zxx" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
@@ -14,7 +21,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Travel</title>
+		<title>Repay</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -58,7 +65,7 @@ label {
 .panel-warning>.panel-heading {
     background-color: rgba(34, 34, 34, 1) !important;
     color: #fff!important;
-    border-color: 1px solid #ddd!important;
+    border-color: 1px solid #ddd !important;
     padding: 10px 15px;
     border-radius: 0.3rem 0.3rem 0 0;
 }
@@ -158,7 +165,7 @@ img {
 				        <ul class="nav-menu">
 				          <li><a href="index.html">Tìm vé</a></li>
 				          <li><a href="infor.html">Thông tin đặt chỗ</a></li>
-				          <li><a href="repay.html">Trả vé</a></li>
+				          <li><a href="repay.jsp">Trả vé</a></li>
 				          <li><a href="check.html">Kiếm tra vé</a></li>
 				          <li><a href="promotion.html">Khuyến mại</a></li>
 				          <li class=""><a href="regulations.html">Các quy định</a></li>	
@@ -179,7 +186,8 @@ img {
 							<h1 class="text-white">
 								Trả vé trực tuyến				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Tìm vé </a>  <span class="lnr lnr-arrow-right"></span>  <a href="repay.html">Trả vé</a></p>
+							<p class="text-white link-nav"><a href="index.html">Tìm vé </a>  <span class="lnr lnr-arrow-right"></span>
+								<a href="confirm.jsp">Xác nhận thông tin vé</a></p>
 						</div>	
 					</div>
 				</div>
@@ -197,116 +205,135 @@ img {
 
 <div class="col-md-12 hidden-print">
     <div class="row et-page-header">
-        <span class="et-main-label ng-binding">TRẢ VÉ TRỰC TUYẾN<!--TRẢ VÉ TRỰC TUYẾN--></span>
+        <span class="et-main-label ng-binding">XÁC NHẬN THÔNG TIN TRẢ VÉ<!--TRẢ VÉ TRỰC TUYẾN--></span>
     </div>
 </div>
 
 <!-- step1 - input -->
 
 <div ng-show="step == 1" class="">
-    <div class="col-md-12">
-        <div>
-            <p class="alert alert-info">
-                Trả vé trực tuyến chỉ áp dụng với trường hợp khách hàng đã thanh toán trực tuyến (qua cổng thanh toán, ví điện tử, app ngân hàng) và có điền email khi mua vé.
-                <br> 
-                Nếu quý khách thanh toán bằng tiền mặt, trả sau qua ứng dụng ngân hàng và atm, chuyển khoản hoặc trả vé khi có sự cố bãi bỏ tàu vui lòng thực hiện thủ tục tại các nhà ga, đại lý bán vé.
-            </p>
-        </div>
-        <label class="ng-binding">Để hiển thị các vé cần trả, vui lòng điền chính xác 3 thông tin dưới đây :<!--Để hiển thị các vé cần trả, vui lòng điền chính xác 3 thông tin dưới đây.--></label>
-    </div>
- 
+	<div class="col-md-12">
+		<div>
+			<p class="alert alert-info">
+				Trả vé trực tuyến chỉ áp dụng với trường hợp khách hàng đã thanh toán trực tuyến (qua cổng thanh toán, ví điện tử, app ngân hàng) và có điền email khi mua vé.
+				<br>
+				Nếu quý khách thanh toán bằng tiền mặt, trả sau qua ứng dụng ngân hàng và atm, chuyển khoản hoặc trả vé khi có sự cố bãi bỏ tàu vui lòng thực hiện thủ tục tại các nhà ga, đại lý bán vé.
+			</p>
+		</div>
+	</div>
+
+	<% NumberFormat nf = new NumberFormat();
+	Ticket tic = (Ticket) request.getAttribute("ticket");
+	String book = (String) request.getAttribute("booking_code");
+	String email = (String) request.getAttribute("email");
+	String phone = (String) request.getAttribute("phone");
+	%>
+
+	<!-- Bước 3. Hệ thống chuyển sang bước xác nhận để hành khách kiểm tra lại thông tin trả vé. -->
     <div class="col-md-12 hidden-print form-horizontal" style="width: 99%;">
         <div>
             <div class="row form-group">
-                <label class="col-xs-4 col-sm-3 control-label ng-binding"><!--Mã đặt chỗ-->Mã đặt chỗ</label>
+                <label class="col-xs-4 col-sm-3 control-label ng-binding">Mã vé</label>
                 <div class="col-xs-8 col-sm-9 et-no-padding">
-                    <input type="text" class="form-control input-sm ng-pristine ng-valid" ng-model="bookingCode">
+					<p><%=tic.getId()%></p>
                 </div>
             </div>
 
             <div class="row form-group">
-                <label class="col-xs-4 col-sm-3 control-label ng-binding"><!--Email-->Email</label>
+                <label class="col-xs-4 col-sm-3 control-label ng-binding">Tên vé</label>
                 <div class="col-xs-8 col-sm-9 et-no-padding">
-                    <input type="email" class="form-control input-sm ng-pristine ng-valid ng-valid-email" ng-model="email">
+					<p><%=tic.getName()%></p>
                 </div>
             </div>
             <div class="row form-group">
-                <label class="col-xs-4 col-sm-3 control-label ng-binding"><!--Số điện thoại-->Điện thoại</label>
+                <label class="col-xs-4 col-sm-3 control-label ng-binding">Mã tàu</label>
                 <div class="col-xs-8 col-sm-9 et-no-padding">
-                    <input type="text" class="form-control input-sm ng-pristine ng-valid" ng-model="mobile">
+					<p><%=tic.getTrainId()%></p>
                 </div>
             </div>
+			<div class="row form-group">
+				<label class="col-xs-4 col-sm-3 control-label ng-binding">Ga đi</label>
+				<div class="col-xs-8 col-sm-9 et-no-padding">
+					<p><%=tic.getLctTO()%></p>
+				</div>
+			</div>
+			<div class="row form-group">
+				<label class="col-xs-4 col-sm-3 control-label ng-binding">Ga đến</label>
+				<div class="col-xs-8 col-sm-9 et-no-padding">
+					<p><%=tic.getLctEnd()%></p>
+				</div>
+			</div>
+			<div class="row form-group">
+				<label class="col-xs-4 col-sm-3 control-label ng-binding">Ngày đi</label>
+				<div class="col-xs-8 col-sm-9 et-no-padding">
+					<p><%=tic.getDayStart()%></p>
+				</div>
+			</div>
+			<div class="row form-group">
+				<label class="col-xs-4 col-sm-3 control-label ng-binding">Ngày về</label>
+				<div class="col-xs-8 col-sm-9 et-no-padding">
+					<p><%=tic.getDayStop()%></p>
+				</div>
+			</div>
+            <div class="row form-group">
+                <label class="col-xs-4 col-sm-3 control-label ng-binding">Giá vé</label>
+                <div class="col-xs-8 col-sm-9 et-no-padding">
+                    <p><%=tic.getValue()%></p>
+                </div>
+            </div>
+
+			<div class="col-md-12 hidden-print">
+				<div class="row et-page-header">
+					<span class="et-main-label ng-binding">THÔNG TIN NGƯỜI ĐẶT VÉ<!--TRẢ VÉ TRỰC TUYẾN--></span>
+				</div>
+			</div>
+			<div class="row form-group">
+				<label class="col-xs-4 col-sm-3 control-label ng-binding">Email</label>
+				<div class="col-xs-8 col-sm-9 et-no-padding">
+					<p><%=email%></p>
+				</div>
+				<label class="col-xs-4 col-sm-3 control-label ng-binding">Số điện thoại</label>
+				<div class="col-xs-8 col-sm-9 et-no-padding">
+					<p><%=phone%></p>
+				</div>
+			</div>
 
             <div class="row form-group">
                 <div class="col-xs-4 col-sm-3"></div>
                 <div class="col-xs-8 col-sm-9 et-no-padding">
-                    <a analytics-on="click" analytics-event="getVeTraOnlineDisplay" href="" class="btn btn-primary ng-binding" ng-click="getVeTraOnlineDisplay()" ng-disabled="isDisabledBtnTraCuu"><!--Tra cứu-->Tra cứu</a>
-                    <a analytics-on="click" analytics-event="ForgotBookingCode" href="/#/quenmadatcho" class="ng-binding"><!--Quên mã đặt chỗ?-->Quên mã đặt chỗ?</a>
+					<!-- Bước 4. Hành khách nhấp vào button trả vé để tiến hành trả vé. -->
+                    <a href="/untitled_war/CompletedServlet?booking=<%=book%> & email=<%=email%> & phone=<%=phone%>" class="btn btn-primary ng-binding">Trả vé</a>
                 </div>
             </div>
         </div>
         <hr>
     </div>
 
-
-
-    
-
-
-    
-
-    
-    
-
-    
-    
-    
-
-    
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
 </div></div>
-            
-            
 
-            
-            
-            <div class="et-col-md-12 hidden-print" style="margin-top: 50px; display: block;">
-                <div class="panel panel-warning" style="margin-bottom: -15px;margin-left:-15px; margin-right:-15px">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Quy định đổi, trả vé: từ ngày 6/2/2023 đến ngày 26/4/2023</h3>
-                    </div>
-                    <div class="panel-body">
-                        <p>1. Thời gian, mức phí đổi trả vé:</p>
-                        <p>- Đổi vé: Vé cá nhân đổi trước giờ tàu chạy 24 giờ trở lên, lệ phí là 20.000 đồng/vé, dưới 24 giờ không đổi vé; không áp dụng đổi vé đối với vé tập thể.</p>
-                        <p>- Trả vé:</p>
-                        <p>&nbsp; &nbsp; + Vé cá nhân: Trả vé trước giờ tàu chạy từ 24 giờ trở lên lệ phí là 10% giá vé, từ 4 giờ đến dưới 24 giờ lệ phí là 20% giá vé, dưới 4 giờ không trả vé.</p>
-                        <p>&nbsp; &nbsp; + Vé tập thể: Trả vé trước giờ tàu chạy từ 72 giờ trở lên lệ phí là 10% giá vé ,từ 24 giờ đến dưới 72 giờ lệ phí là 20% giá vé, dưới 24 giờ không trả vé.</p>
-                        <p>2. Hình thức trả vé.</p>
-                        <p>- Khi hành khách mua vé và thanh toán online qua website bán vé của ngành Đường sắt, app bán vé hoặc các ứng dụng mua vé tàu hỏa của các đối tác thứ ba thì có thể trả vé online qua các website bán vé của ngành đường sắt hoặc đến trực tiếp nhà ga.</p>
-                        <p>- Khi hành khách mua vé bằng các hình thức khác, muốn đổi vé, trả vé hành khách đến trực tiếp nhà ga kèm theo giấy tờ tùy thân bản chính của người đi tàu hoặc người mua vé cho nhân viên đường sắt. Đồng thời, thông tin trên thẻ đi tàu phải trùng khớp với giấy tờ tùy thân của hành khách.</p>
-                        <i>Trân trọng cảm ơn!.</i>
-                    </div>
-                </div>
-            </div>
-            
-            
+						<div class="et-col-md-12 hidden-print" style="margin-top: 50px; display: block;">
+							<div class="panel panel-warning" style="margin-bottom: -15px;margin-left:-15px; margin-right:-15px">
+								<div class="panel-heading">
+									<h3 class="panel-title">Quy định đổi, trả vé: từ ngày 6/2/2023 đến ngày 26/4/2023</h3>
+								</div>
+								<div class="panel-body">
+									<p>1. Thời gian, mức phí đổi trả vé:</p>
+									<p>- Đổi vé: Vé cá nhân đổi trước giờ tàu chạy 24 giờ trở lên, lệ phí là 20.000 đồng/vé, dưới 24 giờ không đổi vé; không áp dụng đổi vé đối với vé tập thể.</p>
+									<p>- Trả vé:</p>
+									<p>&nbsp; &nbsp; + Vé cá nhân: Trả vé trước giờ tàu chạy từ 24 giờ trở lên lệ phí là 10% giá vé, từ 4 giờ đến dưới 24 giờ lệ phí là 20% giá vé, dưới 4 giờ không trả vé.</p>
+									<p>&nbsp; &nbsp; + Vé tập thể: Trả vé trước giờ tàu chạy từ 72 giờ trở lên lệ phí là 10% giá vé ,từ 24 giờ đến dưới 72 giờ lệ phí là 20% giá vé, dưới 24 giờ không trả vé.</p>
+									<p>2. Hình thức trả vé.</p>
+									<p>- Khi hành khách mua vé và thanh toán online qua website bán vé của ngành Đường sắt, app bán vé hoặc các ứng dụng mua vé tàu hỏa của các đối tác thứ ba thì có thể trả vé online qua các website bán vé của ngành đường sắt hoặc đến trực tiếp nhà ga.</p>
+									<p>- Khi hành khách mua vé bằng các hình thức khác, muốn đổi vé, trả vé hành khách đến trực tiếp nhà ga kèm theo giấy tờ tùy thân bản chính của người đi tàu hoặc người mua vé cho nhân viên đường sắt. Đồng thời, thông tin trên thẻ đi tàu phải trùng khớp với giấy tờ tùy thân của hành khách.</p>
+									<i>Trân trọng cảm ơn!.</i>
+								</div>
+							</div>
+						</div>
         </div>
 				</div>	
 			</section>
-			<!-- End hot-deal Area -->			
-			
+			<!-- End hot-deal Area -->
 
 			<!-- start footer Area -->		
 			<footer class="footer-area section-gap">

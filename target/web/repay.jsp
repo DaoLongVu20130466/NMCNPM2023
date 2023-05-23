@@ -1,4 +1,5 @@
 	<!DOCTYPE html>
+    <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 	<html lang="zxx" class="no-js">
 	<head>
 		<!-- Mobile Specific Meta -->
@@ -14,7 +15,7 @@
 		<!-- meta character set -->
 		<meta charset="UTF-8">
 		<!-- Site Title -->
-		<title>Travel</title>
+		<title>Repay</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
 			<!--
@@ -31,7 +32,7 @@
 			<link rel="stylesheet" href="css/main.css">
 		</head>
 		<body>	
-		
+
 <style>
 .et-page-header {
     margin-top: 10px;
@@ -58,7 +59,7 @@ label {
 .panel-warning>.panel-heading {
     background-color: rgba(34, 34, 34, 1) !important;
     color: #fff!important;
-    border-color: 1px solid #ddd!important;
+    /*border-color: 1px solid #ddd !important;*/
     padding: 10px 15px;
     border-radius: 0.3rem 0.3rem 0 0;
 }
@@ -84,7 +85,50 @@ label {
     max-width: 100%;
     color: #555;
 }	
-</style>				
+
+
+.et-step-bar {
+    height: 20px;
+    border-bottom: 1px solid #d3d3d3;
+    margin-bottom: 60px;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.et-col-md-3 {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.et-col-md-3 {
+    width: 25%;
+}
+.et-step-bar img {
+    margin-top: 10px;
+}
+img {
+    vertical-align: middle;
+}
+.et-col-md-3 {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    display: block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.et-col-md-3 {
+    width: 25%;
+}
+.text-info {
+    color: #3a87ad;
+}
+</style>		
+		
 			<header id="header">
 				<div class="header-top">
 					<div class="container">
@@ -134,55 +178,87 @@ label {
 					<div class="row d-flex align-items-center justify-content-center">
 						<div class="about-content col-lg-12">
 							<h1 class="text-white">
-								Các chính sách khuyến mại				
+								Trả vé trực tuyến				
 							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Tìm vé </a>  <span class="lnr lnr-arrow-right"></span>  <a href="promotion.html"> Khuyến mại</a></p>
+							<p class="text-white link-nav"><a href="index.html">Tìm vé </a>  <span class="lnr lnr-arrow-right"></span>  <a href="repay.jsp">Trả vé</a></p>
 						</div>	
 					</div>
 				</div>
 			</section>
 			<!-- End banner Area -->	
 
-			<!-- Start insurence-one Area -->
-			<section class="insurence-one-area section-gap">
+			<!-- Start hot-deal Area -->
+			<section class="hot-deal-area section-gap">
 				<div class="container">
 				
-					<div class="container et-main-content" ng-show="!bannerTet">
+		            <div class="container et-main-content" ng-show="!bannerTet">
             <div class="marquee"><div style="width: 100000px; margin-left: 1116px; animation: 15s linear 1s infinite normal none running marqueeAnimation-8893491;" class="js-marquee-wrapper"><div class="js-marquee" style="margin-right: 0px; float: left;"></div></div></div>
-            <!-- ngView:  --><div data-ng-view="" class="shuffle-animation ng-scope" style="padding-right: 0px; padding-left: 0px;"><div class="ng-scope">
-    <div class="col-xs-12 et-col-md-6">
-        <div class="row et-page-header">
-            <span class="et-main-label">
-                <strong class="ng-binding">CÔNG TY VẬN TẢI ĐƯỜNG SẮT HÀ NỘI<!--Các quy định--></strong>
-            </span>
-        </div>
-        <div>
-            <div class="list-group">
-                <a target="_blank" href="http://www.vantaiduongsathanoi.vn/category/tin-tuc/tin-khuyen-mai/" class="list-group-item ng-binding">
-                    Chính sách khuyến mại<!--Chính sách khuyến mại--></a>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 et-col-md-6">
-        <div class="row et-page-header">
-            <span class="et-main-label">
-                <strong class="ng-binding">CÔNG TY VẬN TẢI ĐƯỜNG SÀI GÒN<!--Các quy định--></strong>
-            </span>
-        </div>
-        <div>
-            <div class="list-group">
-                <a target="_blank" href="http://saigonrailway.com.vn/khuyen-mai-2-22.html" class="list-group-item ng-binding">
-                    Chính sách khuyến mại<!--Chính sách khuyến mại--></a>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-            
-            
+            <!-- ngView:  --><div data-ng-view="" class="shuffle-animation ng-scope" style="padding-right: 0px; padding-left: 0px;"><div ng-controller="sts.controllers.returnticket.traveonline" ng-keypress="onEnter($event)" class="ng-scope">
 
-            
-            
+
+<div class="col-md-12 hidden-print">
+    <div class="row et-page-header">
+        <span class="et-main-label ng-binding">TRẢ VÉ TRỰC TUYẾN<!--TRẢ VÉ TRỰC TUYẾN--></span>
+    </div>
+</div>
+
+<!-- step1 - input -->
+
+<div ng-show="step == 1" class="">
+    <div class="col-md-12">
+        <div>
+            <p class="alert alert-info">
+                Trả vé trực tuyến chỉ áp dụng với trường hợp khách hàng đã thanh toán trực tuyến (qua cổng thanh toán, ví điện tử, app ngân hàng) và có điền email khi mua vé.
+                <br> 
+                Nếu quý khách thanh toán bằng tiền mặt, trả sau qua ứng dụng ngân hàng và atm, chuyển khoản hoặc trả vé khi có sự cố bãi bỏ tàu vui lòng thực hiện thủ tục tại các nhà ga, đại lý bán vé.
+            </p>
+        </div>
+        <label class="ng-binding">Để hiển thị các vé cần trả, vui lòng điền chính xác 3 thông tin dưới đây :<!--Để hiển thị các vé cần trả, vui lòng điền chính xác 3 thông tin dưới đây.--></label>
+    </div>
+
+	<!-- Bước 1. Hành khách điền vào form thông tin Mã đặt chỗ, Email, Điện thoại. -->
+    <form action="/untitled_war/ConfirmServlet" method="get">
+        <div class="col-md-12 hidden-print form-horizontal" style="width: 99%;">
+            <div>
+                <div class="row form-group">
+                    <label class="col-xs-4 col-sm-3 control-label ng-binding"><!--Mã đặt chỗ-->Mã đặt chỗ</label>
+                    <div class="col-xs-8 col-sm-9 et-no-padding">
+                        <input name="booking" type="text" class="form-control input-sm ng-pristine ng-valid" ng-model="bookingCode">
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <label class="col-xs-4 col-sm-3 control-label ng-binding"><!--Email-->Email</label>
+                    <div class="col-xs-8 col-sm-9 et-no-padding">
+                        <input name="email" type="email" class="form-control input-sm ng-pristine ng-valid ng-valid-email" ng-model="email">
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-xs-4 col-sm-3 control-label ng-binding"><!--Số điện thoại-->Điện thoại</label>
+                    <div class="col-xs-8 col-sm-9 et-no-padding">
+                        <input name="phone" type="text" class="form-control input-sm ng-pristine ng-valid" ng-model="mobile">
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <div class="col-xs-4 col-sm-3"></div>
+                    <div class="col-xs-8 col-sm-9 et-no-padding">
+
+                        <!-- Bước 2. Hành khách nhấn vào button tra cứu. -->
+                        <input class="btn btn-primary ng-binding" type="submit" value="Tra cứu">
+                        <a href="/#/quenmadatcho"><!--Quên mã đặt chỗ?-->Quên mã đặt chỗ?</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </form>
+
+
+</div>
+
+</div></div>
+
             <div class="et-col-md-12 hidden-print" style="margin-top: 50px; display: block;">
                 <div class="panel panel-warning" style="margin-bottom: -15px;margin-left:-15px; margin-right:-15px">
                     <div class="panel-heading">
@@ -206,7 +282,7 @@ label {
         </div>
 				</div>	
 			</section>
-			<!-- End insurence-one Area -->		
+			<!-- End hot-deal Area -->			
 			
 
 			<!-- start footer Area -->		
